@@ -79,31 +79,25 @@ export const ContactModal: React.FC<ContactModalProps> = ({
             <h4 className="text-xs uppercase tracking-wider text-[#9d9486] font-semibold">
               Direct Inquiries & Table Bookings
             </h4>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div className="w-full">
               <a
                 href={`tel:${RESTAURANT_INFO.phonePrimary.replace(/-/g, '')}`}
-                className="bg-[#141b23] hover:bg-[#1a232e] border border-[#253241] p-3 rounded-lg flex items-center justify-between group transition-colors"
+                className="bg-[#141b23] hover:bg-[#1a232e] border border-[#253241] p-3.5 rounded-lg flex items-center justify-between group transition-colors"
               >
-                <div className="flex items-center gap-2.5">
-                  <Phone className="w-4 h-4 text-[#dfa24a]" />
-                  <span className="font-mono text-sm font-semibold text-white">
-                    {RESTAURANT_INFO.phonePrimary}
-                  </span>
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-[#dfa24a]/15 flex items-center justify-center">
+                    <Phone className="w-4 h-4 text-[#dfa24a]" />
+                  </div>
+                  <div>
+                    <span className="font-mono text-base font-bold text-white tracking-wider block">
+                      {RESTAURANT_INFO.phonePrimary}
+                    </span>
+                    <span className="text-[11px] text-[#9a9386]">Official Line & WhatsApp</span>
+                  </div>
                 </div>
-                <span className="text-[11px] text-[#dfa24a] group-hover:underline">Call</span>
-              </a>
-
-              <a
-                href={`tel:${RESTAURANT_INFO.phoneSecondary.replace(/-/g, '')}`}
-                className="bg-[#141b23] hover:bg-[#1a232e] border border-[#253241] p-3 rounded-lg flex items-center justify-between group transition-colors"
-              >
-                <div className="flex items-center gap-2.5">
-                  <Phone className="w-4 h-4 text-[#dfa24a]" />
-                  <span className="font-mono text-sm font-semibold text-white">
-                    {RESTAURANT_INFO.phoneSecondary}
-                  </span>
-                </div>
-                <span className="text-[11px] text-[#dfa24a] group-hover:underline">Call</span>
+                <span className="text-xs font-semibold bg-[#dfa24a] text-black px-3 py-1 rounded group-hover:bg-[#ca923e] transition-colors">
+                  Call Now
+                </span>
               </a>
             </div>
           </div>

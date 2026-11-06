@@ -37,20 +37,13 @@ export const Footer: React.FC<FooterProps> = ({
             >
               Contact Us
             </h4>
-            <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 text-xs sm:text-sm text-[#e4ded3] font-medium">
+            <div className="flex items-center text-xs sm:text-sm text-[#e4ded3] font-medium">
               <a
                 href={`tel:${RESTAURANT_INFO.phonePrimary.replace(/-/g, '')}`}
                 className="flex items-center gap-2 hover:text-[#dfa24a] transition-colors"
               >
                 <Phone className="w-3.5 h-3.5 text-[#dfa24a]" />
-                <span>{RESTAURANT_INFO.phonePrimary}</span>
-              </a>
-              <a
-                href={`tel:${RESTAURANT_INFO.phoneSecondary.replace(/-/g, '')}`}
-                className="flex items-center gap-2 hover:text-[#dfa24a] transition-colors"
-              >
-                <Phone className="w-3.5 h-3.5 text-[#dfa24a]" />
-                <span>{RESTAURANT_INFO.phoneSecondary}</span>
+                <span className="font-semibold tracking-wider">{RESTAURANT_INFO.phonePrimary}</span>
               </a>
             </div>
             <p className="text-[11px] text-[#868d95] pt-0.5">
