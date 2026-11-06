@@ -1,0 +1,6 @@
+{
+  "name": "The First Tribe - Peshawar",
+  "description": "Authentic Pashtun flavors meets modern dining at Army Stadium Food Court, Peshawar. Signature BBQ, wood-fired pizza, gourmet burgers, cultural murals, and traditional hospitality.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

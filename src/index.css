@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+.font-serif-luxury {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+/* Custom subtle dark marble & rich gradients */
+.bg-marble-luxury {
+  background-color: #07090b;
+  background-image: 
+    radial-gradient(ellipse at 20% 50%, rgba(223, 162, 74, 0.04) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(20, 184, 166, 0.03) 0%, transparent 50%),
+    linear-gradient(180deg, #06080a 0%, #0b0e11 50%, #06080a 100%);
+}
+
+.bg-teal-luxury {
+  background: linear-gradient(180deg, #032126 0%, #042d33 50%, #021f24 100%);
+}
+
+.bg-parchment-luxury {
+  background-color: #e5e3dc;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.6) 0%, rgba(220, 217, 208, 0.8) 100%);
+}
+
+/* Notched decorative frame corners like the design */
+.ornate-corner-frame {
+  position: relative;
+  border: 1px solid rgba(223, 162, 74, 0.45);
+}
+
+.ornate-corner-frame::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border: 1px solid rgba(223, 162, 74, 0.2);
+  pointer-events: none;
+}
+
+/* Diagonal Ribbon */
+.corner-ribbon {
+  position: absolute;
+  top: 18px;
+  left: -35px;
+  transform: rotate(-45deg);
+  background-color: #22c55e;
+  color: white;
+  padding: 4px 40px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  z-index: 40;
+}
